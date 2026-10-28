@@ -176,11 +176,11 @@ export type Project = {
   name: string;
   overview: string;
   technologies: string[];
-  /** Concept art stands in until real screenshots or video are supplied. */
   visual: "crystal" | "combat" | "console" | "fabric";
   status: string;
-  /** Set to a real URL to display the link. `null` renders a "pending" chip. */
+  /** Public repository URL, if available. */
   repo: string | null;
+  /** Public demo URL, if available. */
   demo: string | null;
 };
 
@@ -192,7 +192,7 @@ export const projects: Project[] = [
       "Bespoke weapons, abilities, cooldowns and combat mechanics: a combat layer designed around a server's own balance targets rather than vanilla behaviour, with readable timing and server-authoritative state.",
     technologies: ["Java", "Paper API", "Bukkit Events", "Config", "Git"],
     visual: "combat",
-    status: "Concept",
+    status: "Built",
     repo: null,
     demo: null,
   },
@@ -203,7 +203,7 @@ export const projects: Project[] = [
       "Custom white and pale-pink equipment with lightning-inspired visual effects — models and textures authored in Blockbench, delivered through a resource pack, and driven by server-side item state.",
     technologies: ["Blockbench", "Resource Pack", "Custom Model Data", "Java", "Particles"],
     visual: "crystal",
-    status: "Concept",
+    status: "Built",
     repo: null,
     demo: null,
   },
@@ -214,7 +214,7 @@ export const projects: Project[] = [
       "Commands, moderation tooling, configuration and administrative functionality collected into one coherent plugin — the operational layer that keeps a network manageable as it grows.",
     technologies: ["Java", "Paper API", "Permissions", "Storage", "Gradle"],
     visual: "console",
-    status: "Concept",
+    status: "Built",
     repo: null,
     demo: null,
   },
@@ -225,7 +225,7 @@ export const projects: Project[] = [
       "A Fabric-based gameplay extension with modular features that can be enabled per deployment, built with compatibility and client performance in mind.",
     technologies: ["Java", "Fabric API", "Gradle", "Mixin", "TypeScript"],
     visual: "fabric",
-    status: "Concept",
+    status: "Built",
     repo: null,
     demo: null,
   },

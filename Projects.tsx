@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 import { projects, type Project } from "@/lib/content";
@@ -163,18 +164,6 @@ function ProjectVisual({ kind }: { kind: Project["visual"] }) {
   );
 }
 
-function PendingLink({ label }: { label: string }) {
-  return (
-    <span
-      aria-disabled="true"
-      className="inline-flex cursor-not-allowed items-center gap-2 rounded-full border border-dashed border-white/15 px-4 py-2 text-sm text-fog"
-      title={`Add a ${label.toLowerCase()} URL in lib/content.ts`}
-    >
-      {label} — link pending
-    </span>
-  );
-}
-
 function LiveLink({ label, href }: { label: string; href: string }) {
   return (
     <a
@@ -249,16 +238,14 @@ export default function Projects() {
                     </ul>
 
                     <div className="mt-7 flex flex-wrap items-center gap-3">
-                      {project.repo ? (
-                        <LiveLink label="Repository" href={project.repo} />
-                      ) : (
-                        <PendingLink label="Repository" />
-                      )}
-                      {project.demo ? (
-                        <LiveLink label="Live demo" href={project.demo} />
-                      ) : (
-                        <PendingLink label="Live demo" />
-                      )}
+                      {project.repo && <LiveLink label="Repository" href={project.repo} />}
+                      {project.demo && <LiveLink label="Live demo" href={project.demo} />}
+                      <Link
+                        href="/collaborate"
+                        className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-4 py-2 text-sm text-white transition-all duration-300 hover:border-icy/60 hover:bg-icy/10"
+                      >
+                        Request a private preview
+                      </Link>
                     </div>
                   </div>
                 </article>

@@ -206,7 +206,6 @@ export default function Projects() {
           index="03"
           eyebrow="Featured Projects"
           title={<>Selected systems and equipment.</>}
-          intro="Each entry lists its scope, stack and current development status. Replace the concept previews with real screenshots or video as builds land."
         />
 
         <div className="mt-16 space-y-16 md:space-y-20">

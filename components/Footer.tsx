@@ -29,6 +29,15 @@ export default function Footer() {
         <div className="flex flex-col gap-2.5 text-sm">
           <span className="label text-fog">Discord</span>
           <span className="text-mist">{contact.discord}</span>
+          <span className="label mt-2 text-fog">Instagram</span>
+          <a
+            href={contact.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-mist transition-colors hover:text-white"
+          >
+            {contact.instagram}
+          </a>
         </div>
       </div>
 

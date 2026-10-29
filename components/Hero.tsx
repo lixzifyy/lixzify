@@ -47,18 +47,18 @@ export default function Hero() {
 
           <Reveal delay={260}>
             <div className="mt-10 flex flex-wrap items-center gap-3.5">
-              <a
-                href={hero.primaryCta.href}
+              <Link
+                href={hero.cta.href}
                 className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-icy to-spark px-7 py-3.5 text-[0.95rem] font-medium text-[#08080b] shadow-[0_10px_40px_-12px_rgba(255,111,174,0.7)] transition-transform duration-300 hover:-translate-y-0.5"
               >
-                <span className="relative z-10">{hero.primaryCta.label}</span>
+                <span className="relative z-10">{hero.cta.label}</span>
                 <svg
                   viewBox="0 0 16 16"
                   aria-hidden
-                  className="relative z-10 h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-y-0.5"
+                  className="relative z-10 h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5"
                 >
                   <path
-                    d="M8 2v12M3 9l5 5 5-5"
+                    d="M3 8h10M9 4l4 4-4 4"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="1.6"
@@ -66,13 +66,6 @@ export default function Hero() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </a>
-
-              <Link
-                href={hero.secondaryCta.href}
-                className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-7 py-3.5 text-[0.95rem] text-white backdrop-blur transition-all duration-300 hover:border-icy/60 hover:bg-icy/[0.08]"
-              >
-                {hero.secondaryCta.label}
               </Link>
             </div>
           </Reveal>

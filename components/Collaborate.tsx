@@ -49,8 +49,9 @@ export default function Collaborate() {
         </Reveal>
 
         <Reveal delay={320} className="mt-14">
-          <p className="font-mono text-[0.72rem] uppercase tracking-[0.2em] text-fog">
-            Discord {contact.discord}
+          <p className="flex flex-wrap items-center justify-center gap-x-7 gap-y-2 font-mono text-[0.72rem] uppercase tracking-[0.2em] text-fog">
+            <span>Discord {contact.discord}</span>
+            <span>Instagram {contact.instagram}</span>
           </p>
         </Reveal>
       </div>

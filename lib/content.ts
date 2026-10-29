@@ -31,7 +31,10 @@ export const site = {
 
 export const contact = {
   /** Your Discord handle — shown to visitors and copied by the collaborate flow. */
-  discord: "@lixzify.productions",
+  discord: "@lixzifycreations",
+  /** Instagram handle, shown alongside Discord in the contact surfaces. */
+  instagram: "@lixzifycreations",
+  instagramUrl: "https://www.instagram.com/lixzifycreations/",
   /**
    * Optional: your numeric Discord profile link (https://discord.com/users/<id>).
    * Discord does not resolve profile URLs from a username alone, so leave this
@@ -54,8 +57,7 @@ export const hero = {
   headline: "I build the systems behind extraordinary Minecraft experiences.",
   subheading:
     "Custom server plugins, Fabric mods, bespoke resource packs, animated equipment, and gameplay systems engineered around your vision.",
-  primaryCta: { label: "Explore My Work", href: "#services" },
-  secondaryCta: { label: "Let's Build Something", href: "/collaborate" },
+  cta: { label: "Let's Build Something", href: "/collaborate" },
   availability: "Available for select projects.",
 } as const;
 

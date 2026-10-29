@@ -140,7 +140,10 @@ export default function Nav() {
           >
             Let&apos;s Build Something
           </Link>
-          <p className="label mt-5 text-fog">Discord {contact.discord}</p>
+          <p className="label mt-5 flex flex-wrap gap-x-6 gap-y-2 text-fog">
+            <span>Discord {contact.discord}</span>
+            <span>Instagram {contact.instagram}</span>
+          </p>
         </nav>
       </div>
     </header>

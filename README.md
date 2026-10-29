@@ -48,10 +48,11 @@ need to touch any component to update the site.
 | Collaborate copy (home band + `/collaborate` page) | `collaborate` |
 | Site name, SEO description, keywords, canonical URL | `site` |
 
-### Discord
+### Discord & Instagram
 
-`contact.discord` is already set to `@lixzify` and is shown on the home page's
-collaborate band and copied to the clipboard from `/collaborate`.
+`contact.discord` is set to `@lixzifycreations` and `contact.instagram` to
+`@lixzifycreations`, shown in the home page's collaborate band, the footer and
+the mobile nav. Discord is also copied to the clipboard from `/collaborate`.
 
 Discord profile URLs require a **numeric user ID**, not a username, so the bar
 opens Discord directly. If you want it to deep-link straight to your profile,
@@ -113,7 +114,7 @@ components/
   CrystalSword.tsx      the SVG crystalline sword asset
   ParticleField.tsx     canvas particle field (static under reduced motion)
   VenomCollaborateButton.tsx   the symbiote CTA
-  DiscordHandoff.tsx    copy-@lixzify + open Discord
+  DiscordHandoff.tsx    copy-@lixzifycreations + open Discord
   MineDog.tsx           the 2D Minecraft wolf companion
   About.tsx  Services.tsx  Projects.tsx  SkillsProcess.tsx  Collaborate.tsx
   SectionHeading.tsx  Reveal.tsx  Footer.tsx

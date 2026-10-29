@@ -31,7 +31,7 @@ export const site = {
 
 export const contact = {
   /** Your Discord handle — shown to visitors and copied by the collaborate flow. */
-  discord: "@lixzify",
+  discord: "@lixzify.productions",
   /**
    * Optional: your numeric Discord profile link (https://discord.com/users/<id>).
    * Discord does not resolve profile URLs from a username alone, so leave this
@@ -43,7 +43,6 @@ export const contact = {
 
 export const nav = [
   { label: "Services", href: "#services" },
-  { label: "Work", href: "#work" },
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Process", href: "#process" },
@@ -55,7 +54,7 @@ export const hero = {
   headline: "I build the systems behind extraordinary Minecraft experiences.",
   subheading:
     "Custom server plugins, Fabric mods, bespoke resource packs, animated equipment, and gameplay systems engineered around your vision.",
-  primaryCta: { label: "Explore My Work", href: "#work" },
+  primaryCta: { label: "Explore My Work", href: "#services" },
   secondaryCta: { label: "Let's Build Something", href: "/collaborate" },
   availability: "Available for select projects.",
 } as const;
@@ -171,65 +170,6 @@ export const services: Service[] = [
   },
 ];
 
-export type Project = {
-  slug: string;
-  name: string;
-  overview: string;
-  technologies: string[];
-  visual: "crystal" | "combat" | "console" | "fabric";
-  status: string;
-  /** Public repository URL, if available. */
-  repo: string | null;
-  /** Public demo URL, if available. */
-  demo: string | null;
-};
-
-export const projects: Project[] = [
-  {
-    slug: "custom-combat-systems",
-    name: "Custom Combat Systems",
-    overview:
-      "Bespoke weapons, abilities, cooldowns and combat mechanics: a combat layer designed around a server's own balance targets rather than vanilla behaviour, with readable timing and server-authoritative state.",
-    technologies: ["Java", "Paper API", "Bukkit Events", "Config", "Git"],
-    visual: "combat",
-    status: "Built",
-    repo: null,
-    demo: null,
-  },
-  {
-    slug: "crystalline-equipment",
-    name: "Crystalline Equipment Collection",
-    overview:
-      "Custom white and pale-pink equipment with lightning-inspired visual effects — models and textures authored in Blockbench, delivered through a resource pack, and driven by server-side item state.",
-    technologies: ["Blockbench", "Resource Pack", "Custom Model Data", "Java", "Particles"],
-    visual: "crystal",
-    status: "Built",
-    repo: null,
-    demo: null,
-  },
-  {
-    slug: "server-utility-suite",
-    name: "Server Utility Suite",
-    overview:
-      "Commands, moderation tooling, configuration and administrative functionality collected into one coherent plugin — the operational layer that keeps a network manageable as it grows.",
-    technologies: ["Java", "Paper API", "Permissions", "Storage", "Gradle"],
-    visual: "console",
-    status: "Built",
-    repo: null,
-    demo: null,
-  },
-  {
-    slug: "custom-gameplay-mod",
-    name: "Custom Gameplay Mod",
-    overview:
-      "A Fabric-based gameplay extension with modular features that can be enabled per deployment, built with compatibility and client performance in mind.",
-    technologies: ["Java", "Fabric API", "Gradle", "Mixin", "TypeScript"],
-    visual: "fabric",
-    status: "Built",
-    repo: null,
-    demo: null,
-  },
-];
 
 export const skills = [
   {

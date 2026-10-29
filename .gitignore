@@ -46,3 +46,6 @@ dev-server.log
 /freebuff-sites-build/
 /.open-next/
 /.wrangler/
+
+# local plugin workspace — kept private, not published with the site
+/plugins/

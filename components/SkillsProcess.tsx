@@ -12,7 +12,7 @@ export function Skills() {
       />
       <div className="shell">
         <SectionHeading
-          index="04"
+          index="03"
           eyebrow="Technical Skills"
           title={<>The working toolkit.</>}
           intro="Technologies I genuinely build with, grouped by where they sit in a project."
@@ -55,7 +55,7 @@ export function Process() {
     <section id="process" className="relative border-t border-white/[0.06] py-24 md:py-32">
       <div className="shell">
         <SectionHeading
-          index="05"
+          index="04"
           eyebrow="Development Process"
           title={<>Four stages, no guesswork.</>}
           intro="A predictable path from first conversation to documented handover."
